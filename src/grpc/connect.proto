@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+
+service Live {
+    rpc SayHello(CommonRequest) returns (CommonReply) {}
+    rpc SayHelloAgain(CommonRequest) returns (CommonReply) {}
+    rpc Start(CommonRequest) returns (CommonReply) {}
+    rpc Stop(CommonRequest) returns (CommonReply) {}
+}
+
+message CommonRequest {
+    string data = 1;
+}
+
+message CommonReply {
+    uint32 code = 1;
+    string message = 2;
+    string data = 3; // server_dict - dump - client_dict
+    string app = 4;
+}

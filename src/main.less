@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~antd/lib/style/themes/default.less";
+@import "~antd/dist/antd.less";
+@import "./resset-antd.less";
+
+body {
+  /* 文字不可选中 */
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+
+}
+
+.yoyo-app {
+  height: 100vh;
+
+  .style_Bar__nNJjZ {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px !important;
+    background: linear-gradient(0deg, #ff7f60, #ffb37b) !important;
+    box-shadow: 0px 4px 16px 0px rgba(183, 85, 59, 0.75) !important;
+    border-bottom: none !important;
+
+    .style_Logo__1AxaT {
+      width: 15vw !important;
+    }
+  }
+
+  &>div:first-child+* {
+    padding-top: 50px;
+  }
+}
+
+.yoyo-autolive-page__grid {
+  --col-w: 9em; 
+  @apply grid gap-3;
+  grid-template-columns: repeat(auto-fill, var(--col-w));
+}
+
+.grid-item__image-container {
+  border: 3px solid transparent;
+
+  img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .ant-btn {
+    color: #ffffff;
+  }
+
+  .grid-item__hover-btns {
+    background-color: #FF995A7F;
+  }
+}
+
+.yoyo-autolive-page__grid-item.selected {
+  .grid-item__image-container {
+    border-color: @primary-color;
+  }
+}
+
+.aspect-ratio-1 {
+  aspect-ratio: 1;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: @primary-color;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: transparent;
+}
+
+
+.ant-modal-content {
+  .ant-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.ant-popover-buttons {
+  display: flex;
+  justify-content: space-between;
+}

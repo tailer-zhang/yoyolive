@@ -1,0 +1,121 @@
+.ant-layout-content {
+  min-height: auto !important;
+}
+
+body {
+  // 按钮
+  .ant-btn > .ant-btn-loading-icon {
+    display: flex;
+  }
+  .ant-timeline-item{
+    padding-bottom: 0;
+  }
+  .ant-progress-line{
+    display: flex;
+    align-items: center;
+  }
+  .ant-btn {
+    @apply rounded-2xl text-xs;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ant-btn-block {
+    border: 0;
+  }
+
+  // 输入框
+  *:not(.ant-input-affix-wrapper) > input:not(.ant-input-borderless),
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-borderless) {
+    @apply rounded-full;
+    border-width: 2px !important;
+  }
+
+  // 无边框输入框
+  .ant-input-borderless,
+  .ant-input-borderless:hover,
+  .ant-input-borderless:focus,
+  .ant-input-borderless-focused,
+  .ant-input-borderless-disabled,
+  .ant-input-borderless[disabled],
+  // 除了输入框之外嵌套了其他元素的输入框
+  .ant-input-affix-wrapper-borderless,
+  .ant-input-affix-wrapper-borderless:hover,
+  .ant-input-affix-wrapper-borderless:focus,
+  .ant-input-affix-wrapper-borderless-focused,
+  .ant-input-affix-wrapper-borderless-disabled,
+  .ant-input-affix-wrapper-borderless[disabled] {
+    border-radius: 0px;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: none;
+  }
+
+  // 移除阴影
+  .ant-form-item-has-error .ant-input:focus,
+  .ant-form-item-has-error .ant-input-affix-wrapper:focus,
+  .ant-form-item-has-error .ant-input-focused,
+  .ant-form-item-has-error .ant-input-affix-wrapper-focused {
+    box-shadow: none;
+  }
+
+  // 标签页
+  .ant-tabs-top > .ant-tabs-nav .ant-tabs-ink-bar,
+  .ant-tabs-bottom > .ant-tabs-nav .ant-tabs-ink-bar,
+  .ant-tabs-top > div > .ant-tabs-nav .ant-tabs-ink-bar,
+  .ant-tabs-bottom > div > .ant-tabs-nav .ant-tabs-ink-bar {
+    height: 4px;
+    border-radius: 2px;
+  }
+
+  .ant-tabs-top > .ant-tabs-nav::before,
+  .ant-tabs-bottom > .ant-tabs-nav::before,
+  .ant-tabs-top > div > .ant-tabs-nav::before,
+  .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    content: none;
+  }
+
+  // 选择器
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    @apply rounded-full;
+  }
+
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+    .ant-select-selector,
+  .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-right-width: 2px !important;
+  }
+
+  .ant-modal-confirm-btns {
+    & > .ant-btn {
+      display: inline-flex;
+    }
+  }
+
+  // 文本域
+  textarea.ant-input {
+    @apply rounded-xl;
+  }
+  .ant-message-custom-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ant-empty {
+    margin-top: 100px;
+  }
+
+  .ant-modal-header {
+		background-color: #42537B;
+		text-align: center;
+
+		.ant-modal-title {
+			color: #FFF;
+		}
+	}
+}

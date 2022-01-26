@@ -1,0 +1,83 @@
+.help-modal {
+	background-color: rgb(255 255 255);
+	h4 {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.ant-input-group {
+		border: 2px solid #F7B9A3;
+		border-radius: 12px;
+	}
+
+	.ant-input-search>.ant-input-group>.ant-input-group-addon:last-child {
+		left: -5px;
+	}
+	.ant-input-affix-wrapper {
+		padding-top: 5px;
+	}
+	.ant-input-search-button {
+		border: none;
+	}
+
+	.help-header {
+		display: flex;
+		justify-content: space-between;
+		padding: 24px 24px 0px 48px;
+
+		button[ant-click-animating-without-extra-node]:after {
+			border: 0 none;
+			opacity: 0;
+			animation: none 0 ease 0 1 normal;
+		}
+
+		.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+			border-right-width: 0px !important;
+		}
+
+		.ant-input-group-addon {
+			background-color: transparent;
+		}
+
+		.ant-btn {
+			background-color: transparent;
+		}
+
+		.ant-select-item-group {
+			font-size: 6px;
+		}
+
+
+	}
+	.ant-input-borderless {
+		padding: 5px 10px;
+	}
+	.ant-input-borderless,
+  .ant-input-borderless:hover,
+  .ant-input-borderless:focus,
+  .ant-input-borderless-focused,
+  .ant-input-borderless-disabled,
+  .ant-input-borderless[disabled],
+  // 除了输入框之外嵌套了其他元素的输入框
+  .ant-input-affix-wrapper-borderless,
+  .ant-input-affix-wrapper-borderless:hover,
+  .ant-input-affix-wrapper-borderless:focus,
+  .ant-input-affix-wrapper-borderless-focused,
+  .ant-input-affix-wrapper-borderless-disabled,
+  .ant-input-affix-wrapper-borderless[disabled] {
+    border-bottom: 0;
+    box-shadow: none;
+  }
+}
+
+.help-List {
+	border-radius: 9px;
+
+	.rc-virtual-list-scrollbar {
+		width: 6px !important;
+	}
+
+	.rc-virtual-list-scrollbar-thumb {
+		width: 80% !important;
+		background: rgb(246 185 163) !important;
+	}
+}

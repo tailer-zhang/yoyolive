@@ -1,0 +1,107 @@
+.yoyo-autolive-page {
+  @apply grid gap-3 h-full w-full;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+
+  section {
+    @apply bg-white;
+  }
+
+  .live-preview-container {
+    position: relative;
+    width: clamp(280px, 100%, 600px);
+    aspect-ratio: 1080 / 1920;
+    max-height: 78vh;
+    background-size: 100% 100%;
+
+    .live-preview-container__role-image {
+      @apply h-full w-full absolute z-10;
+      left: 25%;
+      bottom: -5%;
+    }
+
+    .live-preview-container__goods-info-container {
+      @apply absolute;
+      padding: 5px;
+      width: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1.851%;
+      background: #fff;
+      aspect-ratio: 1 / 1.5;
+    }
+
+    .live-preview-container__goods-image {
+      @apply h-full w-full flex justify-center items-center;
+      background: no-repeat center / contain;
+    }
+  }
+
+  .yoyo-autolive-page__mid-col {
+  }
+
+  .yoyo-autolive-page__stream-id-input-container {
+    @apply pr-0 py-0;
+  }
+}
+
+//商品列表
+.shop_list {
+  .head_list {
+    display: flex;
+  }
+
+  .addList_modal {
+    .ant-modal-header {
+      background-color: #42537b;
+
+      .ant-modal-title {
+        color: #fff;
+      }
+    }
+  }
+
+  .shopDetail-list {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 10px;
+    padding: 0 1vw;
+
+    .detailList-modal {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 2vw;
+
+      .goods_img {
+        width: 8vw;
+        height: 8vw;
+
+        img {
+          border-radius: 1vw;
+          width: 100%;
+          height: 100%;
+        }
+
+        .target-goods {
+          border: 3px solid #ff8462;
+        }
+      }
+
+      .goods_name {
+        font-size: 16px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: #666666;
+      }
+    }
+  }
+}
+
+.yoyo-autolive-page__goods-list-pane {
+}
+
+.yoyo-autolive-page__goods-list {
+  --col-w: 8rem;
+}

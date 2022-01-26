@@ -1,0 +1,36 @@
+.menupane {
+    width: 100%;
+    height: 100%;
+
+
+    .ant-layout-has-sider {
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    .ant-layout-sider-trigger {
+        background: #405279;
+    }
+
+    .ant-layout {
+        overflow: auto;
+    }
+}
+
+.yoyo-autolive-page__nav {
+    @apply list-none;
+
+    a {
+        @apply rounded-full border-2 inline-flex justify-center items-center h-8 w-28;
+        color: @text-color;
+        border-color: @border-color-base;
+        display: inline-flex;
+        transition: unset;
+
+        &.active {
+            background-color: @primary-color;
+            color: white;
+        }
+    }
+}

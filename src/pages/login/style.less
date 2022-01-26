@@ -1,0 +1,136 @@
+.login_modal {
+  background: linear-gradient(0deg, #ff7f60 0%, #ffb47b 100%);
+
+  .login_form_modal {
+    width: 980px;
+    min-height: 517px;
+    max-width: 80%;
+
+    background: #ffffff;
+    box-shadow: 0px 14px 35px 0px rgba(183, 85, 59, 0.75);
+    border-radius: 10px;
+    align-self: center;
+
+    .yoyo-login-pane {
+      .logi_right_form {
+        .ant-tabs-tab-btn {
+          color: #666666;
+          font-size: 0.9rem;
+        }
+
+        .ant-tabs-nav::before {
+          border: none;
+        }
+
+        .ant-tabs-tab:hover {
+          font-weight: 400;
+          color: #666666;
+        }
+
+        .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+          color: #666666;
+        }
+
+        .ant-tabs-ink-bar {
+          height: 4px;
+          border-radius: 1vw;
+          background: #ff995a;
+        }
+      }
+    }
+  }
+}
+
+.yoyo-form--sm.ant-form {
+  @apply mx-auto w-80 max-w-full;
+
+  .yoyo-form-title {
+    @apply text-center mb-12;
+    font-family: Source Han Sans CN;
+  }
+
+  .ant-form-item {
+    @apply m-0;
+  }
+
+  & > .ant-form-item:not(:last-child) {
+    @apply mb-11;
+  }
+
+  button[type="submit"] {
+    @apply text-lg font-bold text-white rounded-full h-11;
+    background: linear-gradient(0deg, #293144, #435680);
+    font-family: Source Han Sans CN;
+  }
+
+  .ant-input {
+    border: none;
+  }
+
+  .ant-input:focus {
+    box-shadow: none;
+  }
+
+  .ant-input-affix-wrapper {
+    border: none;
+  }
+
+  .ant-input-affix-wrapper-focused {
+    box-shadow: none;
+  }
+
+  .ant-input-suffix {
+    border-radius: 2vw;
+  }
+
+  .ant-form-item-control-input-content {
+    // border-bottom: 1px solid #b8b8b8;
+  }
+
+  .ant-form-item-label {
+  }
+
+  .ant-input-affix-wrapper,
+  *:not(.ant-input-affix-wrapper) > input {
+    border-bottom: 1px solid #b8b8b8;
+  }
+
+  .ant-form-item-control-input-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#forgot-pasword-form {
+  @apply mt-28;
+
+  .forget-footerbtn {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ff8462;
+    margin-top: 2vw;
+  }
+}
+
+.yoyo-reset-password-pane {
+  .site-page-header {
+    .anticon {
+      color: #ff8462;
+    }
+
+    .ant-page-header-heading-title {
+      color: #ff8462;
+    }
+  }
+}
+
+.yoyo-login-page__image {
+  max-width: 72%;
+  width: 387px;
+  height: 350px;
+  object-fit: contain;
+}
+
+.yoyo-forgot-password-pane {
+}

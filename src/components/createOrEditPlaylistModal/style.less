@@ -1,0 +1,31 @@
+.yoyo-playlist-modal__stack-checkbox {
+  @apply relative w-full;
+
+  .ant-checkbox-inner,
+  .ant-checkbox-input.input[type="checkbox"] {
+    @apply w-6 h-6;
+  }
+
+  .ant-checkbox-inner {
+    @apply rounded-full border-0;
+    box-shadow: 0px 0px 0px 2px @primary-color;
+  }
+
+  .ant-checkbox + span {
+    @apply w-full;
+  }
+
+  .ant-checkbox {
+    @apply absolute top-2 z-10 right-5;
+  }
+
+  .ant-checkbox-checked::after,
+  .ant-checkbox:hover::after,
+  .ant-checkbox-wrapper:hover .ant-checkbox::after {
+    @apply border-0;
+  }
+
+  .ant-checkbox-inner::after {
+    left: 31%;
+  }
+}
